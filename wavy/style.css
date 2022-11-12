@@ -1,0 +1,106 @@
+body {
+  background-color: #68fa919d;
+  font-family: "Asap", sans-serif;
+  
+}
+
+.login {
+  overflow: hidden;
+  background-color: rgba(225, 239, 245, 0.505);
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  transition: transform 30s, box-shadow 30s;
+  box-shadow: 10px 10px 10px rgba(28, 141, 156, 0.568);
+
+}
+
+
+.login::before {
+  content: "0 o O";
+  left: 50%;
+  bottom: 0%;
+  background-color: rgba(10, 119, 236, 0.133);
+  animation: wawes 6s infinite linear;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 50%;
+  z-index: -1;
+
+}
+.login::after {
+  content: "";
+  left: 55%;
+  bottom: 0%;
+  background-color: rgba(27, 198, 220, 0.189);
+  animation: wawes 7s infinite;
+  animation-direction: reverse;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 50%;
+  z-index: -1;
+}
+.login > input {
+  font-family: "Asap", sans-serif;
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgba(244, 240, 240, 0.485);
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+ 
+}
+.login > button {
+  font-family: "Asap", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: #3b6bd3;
+  transition: background-color 300ms, width 1.2s;
+ 
+}
+.login > button:hover {
+  background-color: rgba(27, 198, 220, 0.951);
+  width: 160px;
+
+  
+}
+
+
+@keyframes wawes {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+}
